@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - JawSculpt</title>
+    <meta name="description" content="JawSculpt Terms of Service - Terms and conditions for using our app.">
+
+    <link rel="icon" type="image/png" href="../assets/app_icon_semi_transparent.png">
+    <link rel="apple-touch-icon" href="../assets/app_icon_semi_transparent.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jawsculpt.app/terms/">
+    <meta property="og:title" content="Terms of Service - JawSculpt">
+    <meta property="og:description" content="JawSculpt Terms of Service - Terms and conditions for using our app.">
+    <meta property="og:image" content="https://jawsculpt.app/assets/app_icon_semi_transparent.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Terms of Service - JawSculpt">
+    <meta name="twitter:description" content="JawSculpt Terms of Service - Terms and conditions for using our app.">
+    <meta name="twitter:image" content="https://jawsculpt.app/assets/app_icon_semi_transparent.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;family=Saira:wght@600;700&amp;display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-bg: #0B0F17;
+            --secondary-bg: #111722;
+            --accent-start: #2D7BFF;
+            --accent-end: #69A7FF;
+            --text-primary: #F2F6FF;
+            --text-secondary: #97A6C6;
+            --error-red: #F06B6B;
+            --warning-orange: #F3B64F;
+        }
+
+        html {
+            min-height: 100%;
+            background: var(--primary-bg);
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: "Poppins", sans-serif;
+            background: var(--primary-bg);
+            color: var(--text-primary);
+            line-height: 1.8;
+            padding: 2rem 1rem;
+        }
+
+        .brand-font {
+            font-family: "Saira", sans-serif;
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--secondary-bg);
+            border-radius: 16px;
+            padding: 3rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid rgba(45, 123, 255, 0.2);
+        }
+
+        .logo-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-link:hover {
+            transform: translateX(-5px);
+        }
+
+        .logo-link img {
+            width: 40px;
+            height: 40px;
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-end) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--accent-end);
+            margin: 2.5rem 0 1.5rem;
+            letter-spacing: -0.3px;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 2rem 0 1rem;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        li {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+            position: relative;
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+
+        li::before {
+            content: "";
+            position: absolute;
+            left: 0.5rem;
+            top: 0.8rem;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--accent-end);
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        .warning-box {
+            background: rgba(240, 107, 107, 0.1);
+            border: 2px solid var(--error-red);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+
+        .warning-box h3 {
+            color: #FFB1B1;
+            margin-top: 0;
+        }
+
+        .warning-box p,
+        .warning-box li {
+            color: var(--text-primary);
+        }
+
+        .info-box {
+            background: rgba(243, 182, 79, 0.1);
+            border-left: 4px solid var(--warning-orange);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .info-box p {
+            margin: 0;
+            color: var(--text-primary);
+        }
+
+        .contact-box {
+            background: rgba(45, 123, 255, 0.1);
+            border: 2px solid var(--accent-start);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .contact-box p {
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .email-link {
+            display: inline-block;
+            color: var(--accent-end);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            padding: 0.75rem 1.5rem;
+            background: rgba(45, 123, 255, 0.1);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .email-link:hover {
+            background: rgba(45, 123, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 2px solid rgba(45, 123, 255, 0.2);
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: var(--accent-end);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-start);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 2rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../" class="logo-link">
+                <img src="../assets/app_icon_inner.png" alt="JawSculpt Icon">
+                <span class="brand-font">JawSculpt</span>
+            </a>
+            <h1>Terms of Service</h1>
+            <div class="last-updated">Last updated: March 10, 2026</div>
+        </header>
+
+        <p>These Terms of Service apply when you use JawSculpt, this website, and any related features. By downloading, accessing, or using JawSculpt, you agree to these terms.</p>
+
+        <div class="warning-box">
+            <h3>Important Notice</h3>
+            <p>JawSculpt is intended for informational consumer use only. It does not provide medical advice, diagnosis, or treatment.</p>
+        </div>
+
+        <h2>1. Acceptance of Terms</h2>
+        <p>By downloading or using JawSculpt, you agree to these terms. If you do not agree, do not use the app.</p>
+
+        <h2>2. License Grant</h2>
+        <p>Subject to these terms, you are granted a limited, non-exclusive, non-transferable, revocable license to use JawSculpt for personal use on compatible Apple devices that you own or control.</p>
+
+        <h2>3. Using JawSculpt</h2>
+        <p>You agree to use JawSculpt lawfully and only with photos or content that you have the right to use. You are responsible for the information you submit through the app.</p>
+
+        <h2>4. Purchases and Subscriptions</h2>
+        <p>If JawSculpt offers subscriptions or paid features, billing is generally handled through Apple. Questions about refunds, cancellations, and billing will usually need to be handled through your Apple account.</p>
+
+        <div class="info-box">
+            <p><strong>Billing note:</strong> Manage subscriptions and refund requests through Apple where applicable.</p>
+        </div>
+
+        <h2>5. Availability</h2>
+        <p>We may update, change, or remove features over time. We do not guarantee that every feature will always be available or error-free.</p>
+
+        <h2>6. Acceptable Use</h2>
+        <ul>
+            <li>Do not misuse the app or use it for unlawful purposes.</li>
+            <li>Do not upload content you do not have permission to use.</li>
+            <li>Do not interfere with or attempt to disrupt the service.</li>
+        </ul>
+
+        <h2>7. Intellectual Property</h2>
+        <p>JawSculpt, its branding, software, design, and related content are owned by their respective rights holders and are protected by applicable intellectual property laws.</p>
+
+        <h2>8. Limitation of Liability</h2>
+        <p>JawSculpt is provided as is and as available to the maximum extent allowed by law. We are not responsible for indirect, incidental, or consequential damages arising from the use of the service.</p>
+
+        <h2>9. Termination</h2>
+        <p>We may suspend or terminate access to JawSculpt if needed to protect the service, comply with law, or respond to misuse. You may stop using the app at any time.</p>
+
+        <h2>10. Changes to These Terms</h2>
+        <p>We may update these terms over time. If we do, the updated date will appear at the top of this page.</p>
+
+        <div class="contact-box">
+            <p><strong>Questions about these terms?</strong></p>
+            <p>Contact us at:</p>
+            <a href="mailto:support@jawsculpt.app" class="email-link">support@jawsculpt.app</a>
+        </div>
+
+        <footer>
+            <div class="footer-links">
+                <a href="../privacy/">Privacy Policy</a>
+                <a href="../support/">Support</a>
+                <a href="../">Home</a>
+            </div>
+            <p>&copy; 2026 JawSculpt. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
