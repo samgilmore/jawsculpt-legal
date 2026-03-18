@@ -270,45 +270,54 @@
                 <span class="brand-font">JawSculpt</span>
             </a>
             <h1>Privacy Policy</h1>
-            <div class="last-updated">Last updated: March 10, 2026</div>
+            <div class="last-updated">Last updated: March 18, 2026</div>
         </header>
 
-        <p>This Privacy Policy explains how JawSculpt handles the photos, scan results, settings, and other information used in the app. JawSculpt is intended for informational consumer use and is not a medical service.</p>
+        <p>This Privacy Policy explains how JawSculpt handles face photos, facial scan results, settings, and other information used in the app. JawSculpt is intended for informational consumer use and is not a medical service.</p>
 
         <div class="highlight-box">
-            <p><strong>Simple version:</strong> JawSculpt mainly uses the information needed to run your scans, show your results, and keep your app experience working. That information is primarily kept locally on your device.</p>
+            <p><strong>Simple version:</strong> JawSculpt uses face photos and derived facial measurements to run scan features, score your scans, and generate in-app projection images. Most scan history is stored locally on your device, and some scan requests are sent to cloud processors only when needed to deliver scoring or projection features.</p>
         </div>
 
         <h2>1. Information We Use</h2>
 
-        <h3>Photos and scan inputs</h3>
-        <p>JawSculpt may use the front and side photos you capture or upload in order to analyze your jawline, show your score, and generate your in-app results.</p>
+        <h3>Face data and scan inputs</h3>
+        <p>JawSculpt collects the face photos you choose to capture or upload for a scan, including front and side face images.</p>
+        <p>JawSculpt also creates and uses derived face data from those photos, such as facial landmarks, facial symmetry measurements, jawline-related angles, chin and neck metrics, scan scores, scan history, and projection images generated from your latest front scan.</p>
 
         <h3>Scan results and progress data</h3>
-        <p>The app may also use the resulting score details, measurements, scan history, and other progress information needed to show your results inside JawSculpt.</p>
+        <p>The app uses the resulting score details, measurements, scan history, progress trends, and generated projection images needed to show your results inside JawSculpt.</p>
 
         <h3>App settings and preferences</h3>
         <p>JawSculpt may store the settings, onboarding answers, and basic preferences you provide so the app can remember your setup and tailor your experience.</p>
 
-        <h2>2. How We Use Information</h2>
+        <h2>2. How We Use Face Data</h2>
         <ul>
-            <li>To run scans and generate your in-app jawline results.</li>
-            <li>To show your score, angle breakdowns, and progress-related features.</li>
+            <li>To detect facial landmarks and compute scan measurements from your front and side photos.</li>
+            <li>To generate your scan score, angle breakdowns, symmetry insights, and other in-app jawline results.</li>
+            <li>To save your scan history and let you compare progress over time inside the app.</li>
+            <li>To generate 30-day and 90-day projection images when you request projection features.</li>
             <li>To support your sculpt plan, debloat targets, and other app features.</li>
             <li>To manage purchases, subscriptions, support requests, and notifications if enabled.</li>
         </ul>
 
-        <h2>3. Where Information Is Stored</h2>
-        <p>JawSculpt is intended to keep most of your app data locally on your device. This includes the information needed for your scans, results, and general app experience.</p>
+        <h2>3. Where Face Data Is Stored</h2>
+        <p>JawSculpt stores your saved scan history, scan images, derived measurements, and generated projections primarily on your device using local app storage.</p>
+        <p>JawSculpt also sends certain scan data to cloud processors when needed to provide remote features. For scan scoring, the app sends front and side scan images, limited recent score history, timestamps, timezone, and scan-angle data to JawSculpt's Firebase callable backend, which then sends the request to OpenAI for processing. For projection generation, the app sends your latest front scan image to JawSculpt's Firebase callable backend, which then sends the request to OpenAI image-generation tools for processing.</p>
+        <p>JawSculpt does not intentionally maintain a separate long-term app-controlled cloud database of raw face scan images for these processing requests.</p>
 
         <h2>4. Notifications and Purchases</h2>
         <p>If you allow notifications, JawSculpt may send app reminders. If you purchase a subscription or other paid feature, payment-related handling is generally managed through Apple.</p>
 
-        <h2>5. Third-Party Access</h2>
-        <p>JawSculpt may rely on third-party services where needed to operate app features, process purchases, or provide limited app support functions. We do not describe JawSculpt as a service that sells your personal data.</p>
+        <h2>5. Third-Party Access and Sharing</h2>
+        <p>JawSculpt shares face data with third-party processors only as needed to operate scan scoring and projection features. These processors currently include Firebase Functions / Google Cloud for request handling and OpenAI for model-based scoring and projection generation.</p>
+        <p>JawSculpt also uses Apple for in-app purchases and subscription processing, Mixpanel for product analytics, and Superwall for paywall and subscription presentation. Mixpanel and Superwall are not used by the app to receive your raw face scan images.</p>
+        <p>JawSculpt does not sell your face data.</p>
 
         <h2>6. Retention and Deletion</h2>
-        <p>JawSculpt is intended to keep most app data locally on your device for as long as you continue using the app. If you remove scans, clear app data, or delete the app, some stored information may no longer be available. If you need help understanding your deletion options, contact support.</p>
+        <p>JawSculpt keeps locally stored scan images, derived facial measurements, scan history, and generated projections on your device until you delete individual scans, reset app data, or delete the app.</p>
+        <p>JawSculpt may temporarily keep an onboarding scan draft on-device until the onboarding flow is completed or cleared.</p>
+        <p>For app-controlled remote processing, JawSculpt does not intentionally keep a separate long-term archive of raw face scan images after processing is complete. Production model requests are configured with response storage disabled where supported. Third-party processors may handle transient processing, buffering, logging, and retention under their own policies.</p>
 
         <h2>7. Children's Privacy</h2>
         <p>JawSculpt is not intended for children under 13, and we do not knowingly design the service to collect personal information from children under 13 for its intended use.</p>
